@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #000;
+}
+
+@font-face {
+  font-family: pl;
+  src: url(Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: psb;
+  src: url(Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: pr;
+  src: url(Poppins-Regular.ttf);
+}
+.path{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.dashed{
+  stroke-dasharray: 10;
+
+}
+svg path {
+  stroke-dasharray: 500;
+  animation: dash 4s linear infinite;
+  background-size: contain;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.topnav a {
+  font-family: pr;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: 0.35s all ease-in-out;
+  z-index: 1;
+}
+
+.topnav a:hover {
+  color: rgb(88, 88, 88);
+}
+
+.contact {
+  font-family: pr;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top:0;
+  margin: 1rem;
+  width: 9rem;
+  height: 3rem;
+  border: 2px solid #FFFFFF;
+  background-color: #000;
+  color: #fff;
+border-radius: 8px;
+transition: 0.35s all ease-in-out;
+cursor: pointer;
+z-index: 1;
+}
+.contact:hover{
+background-color:rgb(88, 88, 88);
+}
+.txt-1 {
+  font-family: psb;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10rem;
+  padding-left: 8rem;
+}
+.txt-2 {
+  font-family: pl;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.6);
+}
+.skills{
+  display: inline-block;
+  padding-left: 6.5rem;
+  margin-top: 4rem;
+}
+.ui{
+  font-family: pr;
+  font-size: 18px;
+  width: 13rem;
+  height: 3.5rem;
+  border: 2px solid #FFFFFF;
+  background-color: #000;
+  color: #fff;
+border-radius: 8px;
+transition: 0.35s all ease-in-out;
+cursor: pointer;
+margin: 20px;
+}
+.ui:hover{
+  background-color:rgb(88, 88, 88);
+  }
+  .editor{
+    font-family: pr;
+    font-size: 18px;
+    width: 13rem;
+    height: 3.5rem;
+    border: 2px solid #FFFFFF;
+    background-color: #000;
+    color: #fff;
+  border-radius: 8px;
+  transition: 0.35s all ease-in-out;
+  cursor: pointer;
+  margin: 20px;
+  }
+  .webd:hover{
+    background-color:rgb(88, 88, 88);
+    }
+    .webd{
+      font-family: pr;
+      font-size: 18px;
+      width: 13rem;
+      height: 3.5rem;
+      border: 2px solid #FFFFFF;
+      background-color: #000;
+      color: #fff;
+    border-radius: 8px;
+    transition: 0.35s all ease-in-out;
+    cursor: pointer;
+    margin: 20px;
+    }
+    .editor:hover{
+      background-color:rgb(88, 88, 88);
+      }
+      .violin{
+        font-family: pr;
+        font-size: 18px;
+        width: 13rem;
+        height: 3.5rem;
+        border: 2px solid #FFFFFF;
+        background-color: #000;
+        color: #fff;
+      border-radius: 8px;
+      transition: 0.35s all ease-in-out;
+      cursor: pointer;
+      margin: 20px;
+      }
+      .violin:hover{
+        background-color:rgb(88, 88, 88);
+        }
+        .para{
+          font-family: pl;
+          font-size: 1.75rem;
+          font-style: normal;
+          font-weight: 200;
+          margin-top: 4rem;
+          padding-left: 8rem;
+          color: rgba(255, 255, 255, 0.6);
+          cursor: pointer;
+          transition: 0.4s all ease-in-out;
+        }
+        .para:hover{
+          color: #fff;
+        }
+        /*The former usually matches common screen sizes (480px, 768px, 1024px, and 1280px)*/
+        
+        @media only screen and (max-width: 1024px) {
+        .txt-1{
+          font-size: 3.75rem;
+        }
+        .para{
+          font-size:1.5rem ;
+        }
+        .skills{
+          scale: 0.9;
+        }
+        @media only screen and (max-width:768px){
+          body{
+            overflow-y: auto;
+          }  
+          svg{
+            width: 0;
+            height: 0;
+          }
+            .txt-1{
+              text-align: center;
+              padding-left: 0px;
+            }
+            .para{
+              text-align: center;
+              padding-left: 0px;
+            }
+            .skills{
+              padding-left:0px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            } 
+        }
+        }
