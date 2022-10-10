@@ -23,15 +23,18 @@ body {
   font-family: pr;
   src: url(Poppins-Regular.ttf);
 }
-.path{
+
+.path {
   position: absolute;
   top: 0;
   right: 0;
 }
-.dashed{
+
+.dashed {
   stroke-dasharray: 10;
 
 }
+
 svg path {
   stroke-dasharray: 500;
   animation: dash 4s linear infinite;
@@ -42,63 +45,75 @@ svg path {
   from {
     stroke-dashoffset: 1000;
   }
+
   to {
     stroke-dashoffset: 0;
   }
 }
-.header{
+
+.header {
   background-color: #000;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
+
+a {
   color: #fff;
   text-decoration: none;
 }
-.navbar{
+
+.navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 24px;
 }
-.nav-menu{
+
+.nav-menu {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 60px;
 }
-.nav-item{
- font-family: pl;
- font-weight: 400;
- font-size: 1.75rem;
+
+.nav-item {
+  font-family: pl;
+  font-weight: 400;
+  font-size: 1.75rem;
 }
+
 .contact {
   font-family: pr;
   font-size: 18px;
   position: absolute;
   right: 0;
-  top:0;
+  top: 0;
   margin: 1rem;
   width: 9rem;
   height: 3rem;
   border: 2px solid #FFFFFF;
   background-color: #000;
   color: #fff;
-border-radius: 8px;
-transition: 0.35s all ease-in-out;
-cursor: pointer;
-z-index: 1;
+  border-radius: 8px;
+  transition: 0.35s all ease-in-out;
+  cursor: pointer;
+  z-index: 1;
 }
-.contact:hover{
-background-color:rgb(88, 88, 88);
+
+.contact:hover {
+  background-color: rgb(88, 88, 88);
 }
-.hamburger{
+
+.hamburger {
   display: none;
   cursor: pointer;
 }
-.bar{
+
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -107,6 +122,7 @@ background-color:rgb(88, 88, 88);
   transition: all 0.3s ease-in-out;
   background-color: #fff;
 }
+
 .txt-1 {
   font-family: psb;
   font-size: 6rem;
@@ -116,6 +132,7 @@ background-color:rgb(88, 88, 88);
   margin-top: 10rem;
   padding-left: 8rem;
 }
+
 .txt-2 {
   font-family: pl;
   font-size: 2rem;
@@ -123,12 +140,14 @@ background-color:rgb(88, 88, 88);
   font-weight: 100;
   color: rgba(255, 255, 255, 0.6);
 }
-.skills{
+
+.skills {
   display: inline-block;
   padding-left: 6.5rem;
   margin-top: 4rem;
 }
-.ui{
+
+.ui {
   font-family: pr;
   font-size: 18px;
   width: 13rem;
@@ -136,150 +155,186 @@ background-color:rgb(88, 88, 88);
   border: 2px solid #FFFFFF;
   background-color: #000;
   color: #fff;
-border-radius: 8px;
-transition: 0.35s all ease-in-out;
-cursor: pointer;
-margin: 20px;
-}
-.ui:hover{
-  background-color:rgb(88, 88, 88);
-  }
-  .editor{
-    font-family: pr;
-    font-size: 18px;
-    width: 13rem;
-    height: 3.5rem;
-    border: 2px solid #FFFFFF;
-    background-color: #000;
-    color: #fff;
   border-radius: 8px;
   transition: 0.35s all ease-in-out;
   cursor: pointer;
   margin: 20px;
+}
+
+.ui:hover {
+  background-color: rgb(88, 88, 88);
+}
+
+.editor {
+  font-family: pr;
+  font-size: 18px;
+  width: 13rem;
+  height: 3.5rem;
+  border: 2px solid #FFFFFF;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.35s all ease-in-out;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.webd:hover {
+  background-color: rgb(88, 88, 88);
+}
+
+.webd {
+  font-family: pr;
+  font-size: 18px;
+  width: 13rem;
+  height: 3.5rem;
+  border: 2px solid #FFFFFF;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.35s all ease-in-out;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.editor:hover {
+  background-color: rgb(88, 88, 88);
+}
+
+.violin {
+  font-family: pr;
+  font-size: 18px;
+  width: 13rem;
+  height: 3.5rem;
+  border: 2px solid #FFFFFF;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.35s all ease-in-out;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.violin:hover {
+  background-color: rgb(88, 88, 88);
+}
+
+.para {
+  font-family: pl;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 200;
+  margin-top: 4rem;
+  padding-left: 8rem;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+
+.para:hover {
+  color: #fff;
+}
+
+/*The former usually matches common screen sizes (480px, 768px, 1024px, and 1280px)*/
+
+@media only screen and (max-width: 1024px) {
+  .txt-1 {
+    font-size: 3.75rem;
   }
-  .webd:hover{
-    background-color:rgb(88, 88, 88);
-    }
-    .webd{
-      font-family: pr;
-      font-size: 18px;
-      width: 13rem;
-      height: 3.5rem;
-      border: 2px solid #FFFFFF;
-      background-color: #000;
-      color: #fff;
-    border-radius: 8px;
-    transition: 0.35s all ease-in-out;
-    cursor: pointer;
-    margin: 20px;
-    }
-    .editor:hover{
-      background-color:rgb(88, 88, 88);
-      }
-      .violin{
-        font-family: pr;
-        font-size: 18px;
-        width: 13rem;
-        height: 3.5rem;
-        border: 2px solid #FFFFFF;
-        background-color: #000;
-        color: #fff;
-      border-radius: 8px;
-      transition: 0.35s all ease-in-out;
-      cursor: pointer;
-      margin: 20px;
-      }
-      .violin:hover{
-        background-color:rgb(88, 88, 88);
-        }
-        .para{
-          font-family: pl;
-          font-size: 1.75rem;
-          font-style: normal;
-          font-weight: 200;
-          margin-top: 4rem;
-          padding-left: 8rem;
-          color: rgba(255, 255, 255, 0.6);
-          cursor: pointer;
-          transition: 0.4s all ease-in-out;
-        }
-        .para:hover{
-          color: #fff;
-        }
-        /*The former usually matches common screen sizes (480px, 768px, 1024px, and 1280px)*/
-        
-        @media only screen and (max-width: 1024px) {
-        .txt-1{
-          font-size: 3.75rem;
-        }
-        .para{
-          font-size:1.5rem ;
-        }
-        .skills{
-          scale: 0.9;
-        }
-      }
-        @media only screen and (max-width:768px){
-          body{
-            overflow-y: auto;
-          }  
-          svg{
-            width: 0;
-            height: 0;
-          }
-            .txt-1{
-              text-align: center;
-              padding-left: 0px;
-            }
-            .para{
-              text-align: center;
-              padding-left: 0px;
-            }
-            .skills{
-              padding-left:0px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            } 
-            .hamburger{
-              display: block;
-            }
 
-            .hamburger.active .bar:nth-child(2){
-opacity: 0;
-            }
-            .hamburger.active .bar:nth-child(1){
-            transform: translateY(8px) rotate(45deg);  
-            }
-            .hamburger.active .bar:nth-child(3){
-              transform: translateY(-8px) rotate(-45deg);  
-              }
-              .nav-menu{
-                position: fixed;
-                left: -100%;
-                top: 15px;
-                gap: 0;
-                flex-direction: column;
-                width: 100%;
-                text-align: center;
-                transform: 0.3s;
-              }
-              .nav-item{
-                margin: 16px;
-              }
-              .nav-menu.active{
-                animation: fadeIn 0.4s ease-in-out;
- left: 0;
-              }
-              .contact{
-                display: none;
-              }
-.nav-menu{
-  display: inline-flex;
+  .para {
+    font-size: 1.5rem;
+  }
 
+  .skills {
+    scale: 0.9;
+  }
 }
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+
+@media only screen and (max-width:768px) {
+  body {
+    overflow-y: auto;
+  }
+
+  svg {
+    width: 0;
+    height: 0;
+  }
+
+  .txt-1 {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .para {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .skills {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 15px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transform: 0.3s;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    margin: 16px;
+  }
+
+  .nav-menu.active {
+    animation: fadeIn 0.4s ease-in-out;
+    left: 0;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .nav-menu {
+    display: inline-flex;
+
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
-        }
