@@ -67,6 +67,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
   gap: 60px;
 }
 .nav-item{
